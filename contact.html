@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--Tuong Nguyen Pham - 301298505-->
+    <head>
+        <title>Real Estate - Contact - Tuong Nguyen Pham</title>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="style.css"/>
+        <script src="https://kit.fontawesome.com/b16fa9c5b7.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="wrapper">
+            <header>
+                <div class = "logo">
+                    <a href="index.html"><img src="logo.png" alt="Pham Tuong Nguyen"></a>
+                </div>
+                <div class = "nav">
+                    <button><a href="index.html">Home</a></button> 
+                    <div class = "dropdown">
+                        <button class="dropbtn"><a href="available.html">Available Properties <i class="fa fa-caret-down"></i></a></button>
+                        <div class ="dropdown-content">
+                            <a href="house.html">Houses</a><hr>
+                            <a href="condo.html">Condominium</a>
+                        </div>
+                    </div>
+                    <button><a href="contact.html">Contact Us</a></button>
+                    <button><a href="site_credit.html">Site Map and Credits Page</a></button> 
+                </div>
+            </header>
+            <main>
+                <hr>
+                <h1 class = "formheader">Send your message <i class="fa-solid fa-paper-plane"></i></h1>
+                <form action="mailto:npham50@my.centennialcollege.ca" method="post" enctype="text/plain">
+                    <label for="first-name">First Name:</label>
+                    <input type="text" id="first-name" name="first-name" required><br>
+                    
+                    <label for="last-name">Last Name:</label>
+                    <input type="text" id="last-name" name="last-name" required><br>
+                    
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" required><br>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required><br>
+                    
+                    <label for="property-type">Type of Property:</label>
+                    <select id="property-type" name="property-type" required>
+                      <option value="">--Select--</option>
+                      <option value="house">House</option>
+                      <option value="condo">Condominium</option>
+                    </select><br>
+                    
+                    <label for="bedrooms">Number of Bedrooms:</label>
+                    <input type="number" id="bedrooms" name="bedrooms" min="0" required><br>
+                    
+                    <label for="bathrooms">Number of Bathrooms:</label>
+                    <input type="number" id="bathrooms" name="bathrooms" min="0" required><br>
+                    
+                    <label for="price-range">Price Range:</label>
+                    <input type="number" id="price-range-min" name="price-range-min" min="0" placeholder="Min">
+                    <span>-</span>
+                    <input type="number" id="price-range-max" name="price-range-max" min="0" placeholder="Max"><br>
+                    
+                    <label for="comments">Additional Comments:</label>
+                    <textarea id="comments" name="comments" rows="5"></textarea><br>
+                    
+                    <input type="submit" value="Submit">
+                  </form>
+            </main>
+        </div>
+    </body>
+    <!-- /* -----------------footer------------------- */ -->
+    <footer>
+        <div class = "favicon">
+            <a href="https://www.facebook.com/nguyen.pham.currybon.0911/" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.youtube.com/channel/UClwubuU8BtfvUEwyHWNXsrQ" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://www.instagram.com/_nothing.but.bonn/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+        <div class = "footertext">
+            <p>We're based in Plymouth, Massachusetts.</p>
+            <p>We work with clients from all overs. Get in touch with usl</p>
+        </div>
+        <div class = "footerinfo">
+            <p><i class="fa-solid fa-envelope"></i><a href="mailto:npham50@my.centennialcollege.ca">npham50@my.centennialcollege.ca</a></p>
+            <p><i class="fa-solid fa-phone"></i> +1 (437) 428 - 6446</p>
+            <p><i class="fa-solid fa-house"></i>18 Hutcherson Square, Scarborough, CA </p>
+        </div>
+        <hr>
+        <p class="copyright">Tuong Nguyen Pham - 301298505 - Individual Project &copy; 2023 </p>
+    </footer>
